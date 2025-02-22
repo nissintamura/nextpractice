@@ -1,16 +1,18 @@
-export default function Input({ type, placeholder, value, onChange }: { 
+const Label = (props: { 
     type: string; 
     placeholder: string; 
     value: string; 
     onChange: (e: React.ChangeEvent<HTMLInputElement>) => void; 
-}) {
+}) => {
     return (
         <input
-            type={type}
-            placeholder={placeholder}
-            value={value}
-            onChange={onChange}
+            type={props.type}
+            placeholder={props.placeholder}
+            value={props.value}
+            onChange={props.onChange}
             className="border p-2 mb-2"
         />
     );
 }
+
+export default Label;
