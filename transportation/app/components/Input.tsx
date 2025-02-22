@@ -1,4 +1,4 @@
-const Label = (props: { 
+const Input = (props: { 
     type: string; 
     placeholder: string; 
     value: string; 
@@ -15,4 +15,4 @@ const Label = (props: {
     );
 }
 
-export default Label;
+export default Input;

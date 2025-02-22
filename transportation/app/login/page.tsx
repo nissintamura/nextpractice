@@ -2,7 +2,7 @@
 import React from 'react';
 import { useState } from 'react';
 import { useRouter } from "next/navigation"; 
-import Label from "@/components/Label"; 
+import Input from "@/components/Input"; 
 import Button from "@/components/Button"; 
 
 const Login = () => {
@@ -25,8 +25,8 @@ const Login = () => {
         <main className="flex flex-col items-center justify-center h-screen">
             <h1 className="text-2xl font-bold mb-4">ログイン</h1>
             <form onSubmit={loginForm} className="flex flex-col items-center">
-                <Label type="text" placeholder="ID" value={id} onChange={(e) => setId(e.target.value)} />
-                <Label type="password" placeholder="パスワード" value={password} onChange={(e) => setPassword(e.target.value)} />
+                <Input type="text" placeholder="ID" value={id} onChange={(e) => setId(e.target.value)} />
+                <Input type="password" placeholder="パスワード" value={password} onChange={(e) => setPassword(e.target.value)} />
                 <Button onClick={() => setMessage("ログイン成功！")}>ログイン</Button> 
             </form>
         </main>
