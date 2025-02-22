@@ -12,7 +12,7 @@ const Login = () => {
     const router = useRouter(); //ページ遷移用
 
     const loginForm = (e: React.FormEvent) => {
-        e.preventDefault(); //フォーム送信時のページリロードを防ぐ
+        e.preventDefault(); //フォーム送信時のページリロードを防ぐ(リロードが発生し、入力情報が消えてしまうため)
         console.log("ログインボタンが押されました"); // デバッグ用ログ
         if (id === "admin" && password === "password") {
            router.push("/main"); // 遷移
