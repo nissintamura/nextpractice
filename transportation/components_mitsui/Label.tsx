@@ -1,7 +1,7 @@
 'use client'
 const Label=(props)=>{
     return(
-        <div>{props.value}</div>
+        <Label>{props.value}</Label>
     )
 };
 

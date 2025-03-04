@@ -1,9 +1,9 @@
 'use client'
 import React from 'react';
 
-const Text = ({ type, value, onChange }) => {
+const Text = (props) => {
   return (
-    <input type={type} value={value} onChange={onChange} className = "text-black"/>
+    <input type={props.type} value={props.value} onChange={props.onChange} className = "border-2 border-black p-2 rounded"/>
   );
 };
 

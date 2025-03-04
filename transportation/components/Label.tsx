@@ -1,9 +1,7 @@
 'use client'
 const Label=(props)=>{
-    return(
-        <div>
-            {props.value}
-        </div>
+    return(        
+        <label className="w-24">{props.value}</label>
     )
 };
 
